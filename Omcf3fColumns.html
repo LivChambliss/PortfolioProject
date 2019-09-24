@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!—
+Name: Olivia Chambliss
+Pawprint: omcf3f
+Date: 9/7/2019
+Challenge 3: Multi-Column Layout
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Skills Page</title>
+        <style>
+            
+                ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 35px;
+   
+}
+
+li a:hover {
+  background-color: #111;
+}
+            #mainWrapper {
+                border: 8px solid powderblue;
+                border-radius: 60px;
+                padding: 10px;
+                background-color: aliceblue;
+                text-align: center;
+                width: 1092px;
+                margin-top: 20px;
+                  
+            }
+            
+            #header {
+                text-align: center;
+                font-family:sans-serif;
+                flex: 100%;
+            }
+            
+            #header2 {
+                text-align: center;
+                font-family:sans-serif;
+                flex: 100%;
+            }
+            
+            
+            #columnLeft {
+                margin: 18px;
+                height: 390px;
+                border: 8px solid slategray;
+                border-radius: 60px;
+                background-color: lightgray;
+                width: 239px;
+                float: left;
+                padding: 18px
+            }
+                
+                    
+             #columnCenter {
+                margin: 18px;
+                width: 432px;
+                float: left;
+            }
+            
+            #columnRight {
+                margin: 18px;
+                height: 390px;
+                border: 8px solid slategray;
+                border-radius: 60px;
+                background-color: lightgray;
+                width: 209px;
+                float: left;
+                padding: 18px
+            }
+       
+            
+            #topRow {
+                margin: 18px;
+                width: 376px;
+                padding: 20px;
+                border: 8px solid slategray;
+                background-color: lightgray;
+                border-radius: 60px;
+                padding: 20px;
+                height: 120px
+        
+               
+            }
+            
+            #botRow {
+                margin: 18px;
+                width: 376px;
+                height: 175px;
+                border: 8px solid slategray;
+                border-radius: 60px;
+                background-color: lightgray;
+                padding: 20px;
+            }
+            
+            
+            .clear:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+           
+        
+        </style>
+    </head>
+    <body>
+        
+<ul>
+  <li><a class="active" href="Omcf3fPortfolio.html">Olivia Chambliss</a></li>
+  <li><a href="Omcf3fColumns.html">Skills</a></li>
+  <li><a href="Omcf3fTable.html">Classes</a></li>
+  <li><a href="Omcf3fProjects.html">Projects</a></li>
+  
+</ul>
+        
+        <!-- Main wrapper. This div should wrap all columns, row wrapper, and title header 
+        
+-->
+        
+        <div id="mainWrapper" class="clear">
+            <h2 id="header">Skills</h2>
+            
+            
+            
+            <!-- Left Column -->
+            <!-- Put left column physical width calculations here: 
+
+
+Physical Width for .column
+   8px ( *2) borders
+     18px (*2)margin
+     18ps (*2) padding
+    239px width
+
+_____________________________________________
+    
+    327px physical width 
+
+            -->
+            <div id="columnLeft">
+                <h2 id = "header2">Languages</h2>
+                <li> Python </li>
+                <li> C# </li>
+                <li> HTML </li>
+                <li> Java </li>
+            </div>
+            
+            
+            <!-- Row Wrapper. This div will contain two rows -->
+            
+            <!--Put middle column physical width calculations here:
+
+        18px ( * 2) -> middle column margin
+        432px -> middle column content width
+_______________________________________________
+
+        468px for physical width 
+
+
+            -->
+            
+            
+            <div id="columnCenter">
+                <div id="topRow">
+                    <h2 id="header2">CourseWork</h2>
+                    <li> Intro to C# </li>
+                    <li> Intro to Python </li>
+                    <li> Web Development </li>
+                    <li> Object Oriented Programming </li>
+                
+                </div>
+                
+                <div id ="botRow">
+                    <h2 id="header2">Other</h2>
+                    <li> ESports Coordination Intern </li>
+                    <li> Target Electronics Expert </li>
+                    
+                    </div>
+                
+            </div>
+            
+            
+            
+            
+            <!-- Right Column -->
+            <!--Put right column physical width calculations here: 
+
+Physical Width of Right Column
+
+(subtract)
+    1092px -> mainWrapper width
+    327px -> left column 
+    468  -> middle column width
+    18 * 2 -> right column padding  
+    8 * 2 -> right oclumn border 
+    18 * 2 -> right column margin
+__________________
+    209px content width right column
+
+
+
+            -->
+            <div id="columnRight">
+                <h2 id="header2">Technologies</h2>
+                <li> GIT </li>
+                <li> SLQ Database </li>
+                
+            </div>
+        </div>
+        <p>Last updated 9/10/2019</p>
+    </body>
+</html>
+
+<!--
+Ask about:
+-space of the two rows not being centered 
+-making the list go up and down
+-height of the bottom row matching the left and right columns
+
+-->

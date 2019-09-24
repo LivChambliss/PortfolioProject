@@ -1,0 +1,79 @@
+/* Main container information --> placed in the main div */
+#mainContainer{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    width: 90%;
+    position: relative;
+    margin-top: 100%;
+    margin-bottom: 100%;
+    text-align: center;
+    display: flex;
+}
+/* main card stuff --> embedded into elements*/
+.cardContainer{
+    width: 450px;
+    background-color: bisque;
+    border: 2px solid navy;
+    border-radius: 10px;
+    position: relative;
+    margin: 5% auto;
+    overflow: auto;
+}
+/* Image stuff --> embedded in divs inside main div*/
+.cardContainer img{
+    width: 100%;
+    border-bottom: 10px solid white;
+}
+
+/* This is the title --> this goes under the img tag */
+.cardContainer span{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: font-family: 'Mansalva', cursive;
+}
+
+/* Card Description --> this goes under the titles */
+.cardContainer p{
+    font-size: 20px;
+    text-align: center;
+/*    Description below the title */
+/*    play around with padding */
+}
+
+/* Card Link Information --> this goes under the description */
+.cardContainer a {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+/*    link goes below description */
+    color: navy;
+}
+
+/* Navbar CSS information */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+li a:hover {
+  background-color: #111;
+}
